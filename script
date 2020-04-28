@@ -4,5 +4,5 @@ cd example-jpa
 ./gradlew build
 yum update
 yum install postgresql
-docker build -t sit -f dockerfile .
+docker build -t sit -f dockerfile /home/albina
 docker run -it --name=mycontainersit sit
