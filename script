@@ -1,0 +1,8 @@
+#!/bin/bash
+git clone https://gitlab.com/romanov73/example-jpa.git
+cd example-jpa
+./gradlew build
+yum update
+yum install postgresql
+docker build -t sit -f dockerfile .
+docker run -it --name=mycontainersit sit
